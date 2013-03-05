@@ -18,7 +18,35 @@ Or install it yourself as:
 
 ## Usage
 
+* Random String Generator
+```ruby
+String.random
+=> 's' # a random letter
 
+String.random size: 7
+=> 'tcoqntv' # 7 random lower cased letters
+
+String.random size: 7, mixed_cased: true
+=> 'osPiyeM' # 7 random mixed case letters
+
+String.random size: 7, alphanumeric: true
+=> 'rcwq3l2' # 7 random alphanumerals
+
+'as4vLm2W'.random
+=> 'e4vmHjku' # random letters of the same size and mixed-case-ness
+```
+
+* String Introspection
+```ruby
+'asd'.mixed_case? # => true
+'asd'.upcased? # => false
+'asd'.downcased? # => true
+'asd'.alphanumeric? # => false
+'asd123'.alphanumeric? # => true
+'asd'.numeric? # => false
+'123'.numeric? # => true
+
+```
 
 ## Contributing
 
