@@ -1,7 +1,7 @@
 module MonkeyString
   module Introspection
     def mixed_case?
-      !upcased? && !downcased? || alphanumeric? && !numeric?
+      !upcased? && !downcased? || alphanumeric?
     end
     
     def downcased?
